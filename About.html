@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - SwiftShip Couriers</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #1c1c1c;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      z-index: 1000;
+    }
+
+    nav .logo {
+      font-weight: bold;
+      font-size: 1.4rem;
+      color: #00d4ff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #00d4ff;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1618498082410-2c218ebec083?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 2;
+      font-size: 2.8rem;
+    }
+
+    main {
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section {
+      margin-bottom: 3rem;
+    }
+
+    .section h2 {
+      color: #00b6e6;
+      margin-bottom: 1rem;
+    }
+
+    .section p {
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #222;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">SwiftShip</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="tracking.html">Track</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>About SwiftShip Couriers</h1>
+  </header>
+
+  <main>
+    <div class="section">
+      <h2>Who We Are</h2>
+      <p>
+        <span class="highlight">SwiftShip</span> is a next-generation courier company that’s changing the way people move packages. Founded with a mission to bring speed, reliability, and transparency to the courier industry, we've helped thousands of customers deliver what matters most—on time and with care.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Our Mission</h2>
+      <p>
+        We aim to make logistics seamless by leveraging smart technology and a dedicated team. Whether it's across town or across the world, we’re committed to delivering your goods safely and swiftly.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Why Choose Us</h2>
+      <p>
+        ✅ 24/7 customer support <br>
+        ✅ Real-time tracking and delivery updates <br>
+        ✅ Same-day & next-day delivery options <br>
+        ✅ Eco-friendly delivery modes <br>
+        ✅ Global reach with local care
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Our Team</h2>
+      <p>
+        Behind every package is a team of logistics experts, customer service professionals, and delivery champions. We believe that trust is earned through consistency—and that’s what our people deliver every day.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 SwiftShip Couriers. All rights reserved.
+  </footer>
+
+</body>
+</html>

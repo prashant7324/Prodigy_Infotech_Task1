@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SwiftShip - Services</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #1c1c1c;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      z-index: 1000;
+    }
+
+    nav .logo {
+      font-weight: bold;
+      font-size: 1.4rem;
+      color: #00d4ff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #00d4ff;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1609758576775-f12b58c4e7f9?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 2;
+      font-size: 2.8rem;
+    }
+
+    main {
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+
+    .service-card h3 {
+      color: #00b6e6;
+      margin-bottom: 0.5rem;
+    }
+
+    .service-card p {
+      color: #555;
+      line-height: 1.5;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">SwiftShip</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="index.html#track">Track</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Our Courier Services</h1>
+  </header>
+
+  <main>
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>Same-Day Delivery</h3>
+        <p>Urgent package? We’ll deliver it to your customer’s door within hours, guaranteed!</p>
+      </div>
+      <div class="service-card">
+        <h3>Next-Day Shipping</h3>
+        <p>Reliable overnight shipping for businesses and individuals—on time, every time.</p>
+      </div>
+      <div class="service-card">
+        <h3>Bulk Logistics</h3>
+        <p>We handle commercial and bulk deliveries for eCommerce, retail, and supply chains.</p>
+      </div>
+      <div class="service-card">
+        <h3>International Shipping</h3>
+        <p>Send your packages globally with tracking and insurance, at unbeatable rates.</p>
+      </div>
+      <div class="service-card">
+        <h3>Warehouse & Fulfillment</h3>
+        <p>From storage to doorstep—we take care of your entire delivery lifecycle.</p>
+      </div>
+      <div class="service-card">
+        <h3>Eco-Friendly Courier</h3>
+        <p>We care about the planet. Our green delivery options use electric vehicles and bikes.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 SwiftShip Couriers. All rights reserved.
+  </footer>
+
+</body>
+</html>
